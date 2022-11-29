@@ -1,0 +1,92 @@
+{
+   "_scenename":{
+      "req":"mandatory",
+      "typeof":"string",
+      "%comment%":"Name of the Scene"
+   },
+   "_sid":{
+      "req":"mandatory",
+      "typeof":"string",
+      "%comment%":"A fillable Unique Identifier of a Scene to distinguish the scene"
+   },
+   "_slabel":{
+      "req":"optional",
+      "typeof":"string",
+      "%comment%":"A fillable Optional text field for scene description in 50 words"
+   },
+   "_scenearea":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"defines the boundaries of the virtual play area to consittute multiple playareas where articles and scene users interact with length, breadth, height ending up in a cube or cuboid."
+   },
+   "_playarea":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"defines the boundaries of the virtual play area where articles and scene users interact with length, breadth, height ending up in a cube or cuboid. The size of playarea should be less than scenearea."
+   },
+   "_camera":{
+      "req":"mandatory",
+      "typeof":"boolean",
+      "%comment%":"true for yes, false for no. This is to set initial camera in the scene"
+   },
+   "_initialpos":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"provide camera initial position in x,y,z coordinate values in a 3D plane with {0,0,0} as center horizon"
+   },
+   "_horizon":{
+      "req":"mandatory",
+      "typeof":"boolean",
+      "%comment%":"true for yes, false for no. This is to set horizon sun to map the terrian with real world"
+   },
+   "_dof":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"accepts two values 3 and 6. Throw errors for the rest of the values"
+   },
+   "_skybox":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"accepts two values 3 and 6. Throw errors for the rest of the values"
+   },
+   "_controllers":{
+      "req":"mandatory",
+      "typeof":"string",
+      "%comment%":"accepts three multip type values haptic_wrist, hand, haptic_limb, haptic_obody, haptic_null. Throw errors for the rest of the values"
+   },
+   "_gravity":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"Allows earth gravity ground, else provide value in meter per second"
+   },
+   "_interaction":{
+      "req":"mandatory",
+      "typeof":"boolean",
+      "%comment%":"This describes the interaction capacity in the scene."
+   },
+   "_nestedscene":{
+      "req":"mandatory",
+      "typeof":"number",
+      "%comment%":"To understand the nested scenes, their count and id values with cross validation"
+   },
+   "_audio":{
+      "req":"mandatory",
+      "typeof":"boolean",
+      "%comment%":"true for spatial audio, false for no spatial audio"
+   },
+   "_timeline":{
+      "req":"mandatory",
+      "typeof":"boolean",
+      "%comment%":"true for timed scene with dynamic events, false for a static scene with static events"
+   },
+   "_Opttxt1":{
+      "req":"optional",
+      "typeof":"string",
+      "%comment%":"For user optional text"
+   },
+   "@context_mock":{
+      "req":"optional",
+      "typeof":"string",
+      "%comment%":"For external reference URLs"
+   }
+}
